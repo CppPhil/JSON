@@ -5,5 +5,11 @@ cmake_minimum_required (VERSION 3.8)
 
 project ("JSON")
 
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
 # Include sub-projects.
+add_subdirectory(external/nlohmann_json)
+
 add_subdirectory ("JSON")
